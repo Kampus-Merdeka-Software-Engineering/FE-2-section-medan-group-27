@@ -1,0 +1,312 @@
+*{
+    margin : 0;
+    padding : 0;
+ }
+ 
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+ }
+
+ /* Header halaman */
+nav{
+    background-color: #0B2E48;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+
+nav .logo{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+    color: rgb(252, 251, 251);
+    font-size : 25px;
+    padding-left: 15px;
+ }
+
+nav .login{
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    display: flex;
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    flex-shrink: 0;
+    padding: 5px;
+}
+.opsi-login a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.opsi-login a:hover {
+    color: #ff9f19;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*Main Content */
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 81, 127);
+    height: 4rem;
+    padding: 0px;
+    align-items: center;
+    gap: 0px;
+    list-style-type: none;
+}
+
+.navbar li {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.navbar li a {
+    color: #fcfbfb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    cursor: pointer;  
+}
+.navbar li a:hover {
+    color: #ff9f19;
+    font-weight: bold;
+}
+
+/*section1*/
+main{
+    padding-bottom: 50px;
+}
+.section1{
+    display: flex;
+}
+
+.News{
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.section1 a{
+    display: flex;
+    justify-content: space-between;
+    width: 600px; 
+    height: 400px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 2px black solid;
+    list-style: none;
+    margin-top: 30px;
+}
+.section1 b{
+    display: flex;
+    justify-content: center;
+    width: 250px; 
+    height: 540px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 2px black solid;
+}
+.section1 .comment{
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+.section1 div{
+    display: list-item;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.section1 h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.section1 h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 20px;
+    width:600px;
+}
+
+/*section2*/
+.section1 .B{
+    display: flex;
+    width: 600px;
+    height: 150px;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 1rem;
+}
+
+.section1 .A {
+    display: list-item;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    width: 300px; 
+    height: 150px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 2px black solid;
+    list-style: none;
+}
+.box1 p{
+    text-align: left;
+    margin-top: 7rem;
+}
+.A p{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    text-align:left;
+    font-size: 0.8rem;
+}
+.hot{
+    margin-top: 7rem;
+    padding-top: 10px;
+
+}
+
+/*C*/
+.section1 .C{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    height: 150px;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.C .box2{
+    display: flex;
+    justify-content: center;
+    width: 320px; 
+    height: 150px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 2px black solid;
+}
+.C .nama{
+    height: 150px;
+}
+.C h1{
+    width: 125px;
+    text-align: left;
+}
+.C p{
+    width: 280px;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/*D*/
+.section1 .D{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    height: 150px;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.D .box2{
+    display: flex;
+    justify-content: center;
+    width: 320px; 
+    height: 150px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 2px black solid;
+}
+.D .nama{
+    height: 150px;
+}
+.D h1{
+    width: 125px;
+    text-align: left;
+}
+.D p{
+    width: 280px;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/*E*/
+.section2{
+    display: list-item;
+}
+main .E{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.E .box3{
+    display: flex;
+    justify-content: space-around;
+    width: 300px; 
+    height: 150px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 2px black solid;
+    
+}
+.box3 h1{
+    width: 115px;
+    margin-top: 4rem;
+}
+
+
+/*Title*/
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+/*footer*/
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    background-color:rgb(20, 81, 127) ;
+}
