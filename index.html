@@ -2,49 +2,99 @@
 <html lang="en">
     <head>
         <title>MedanTech_27</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+
     </head>
 
     <body>
+        <script>
+
+            // const tbody = document.querySelector('tbody')
+            // let userData = [];
+
+            // const loadData = async () => {
+            //     try {
+            //         const url = await fetch('https://jsonplaceholder.typicode.com/posts');
+            //         userData = await url.json();
+            //         console.log(userData)
+            //         loadUserData(userData);
+
+            //     } catch (err){
+            //         console.log(err)
+            //     }
+            // }
+
+            // const loadUserData = (data) => {
+            //     let no =1;
+            //     const output = data.map((el) => {
+            //         return 
+            //         <tr>
+            //             <td> + (no++) + </td>
+            //             <td>${el.title}</td>
+            //             <td>${el.body}</td>
+
+            //         </tr>
+            //     }).join('')
+            //     tbody.innerHTML = output;
+            // }
+
+            // loadData()
+        </script>
         <header>
             <nav>
-                <div class = "logo" href="#">
-                    <h4> Medan.Tech27</h4>
+                <div class = "logo">
+                    <img src="img/LOGO.png">
                 </div>
 
                 <nav class="login">
                     <form>
                          <input type="text" placeholder="Cari topik" class="search-input">
+                         <button type="submit" class="search">Search</button>
                     </form>
+
+                     <div type="button" class="btv"><img src="img/ic.png"></div>
     
                     <b class="opsi-login">  
-                        <a href="login.html">Login</a>
+                    <div class="menu">
+                        <ul>
+                            <li class="dropdown"><a href="#" class="dr"><img src="img/icd.png"></a>
+                            <ul class="isi-dropdown">
+                                <li><a href="view/login.html">Login</a></li>
+                                <li><a href="view/profil.html">Profil</a></li>
+                                <li><a href="view/signup.html">Sign Up</a></li>
+                                <li><a href="#sc2">Komentar</a></li>
+                                <li><a href="#ti-a">About</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>  
                     </b>
                 </nav>
             </nav>
 
             <ul class="navbar">
-                <li><a href="#">Apps & OS</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Internet</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Tech Innovation</a></li>
-                <li><a href="#">Gadget</a></li>
-                <li><a href="#">Hardware</a></li>
-                <li><a href="#">Game</a></li>
-                <li><a href="#">Indeks</a></li>
-                <li><a href="#">Kilas Internet</a></li>
+                <li><a href="index.html">Beranda</a></li>
+                <li class="app" onclick="myfunction()"><a href="view/app.html">Apps & OS</a></li>
+                <li><a href="view/Internet.html">Internet</a></li>
+                <li><a href="view/tech.html">Tech Innovation</a></li>
+                <li><a href="view/gadget.html">Gadget</a></li>
+                <li><a href="view/hardware.html">Hardware & Software</a></li>
+                <li><a href="view/game.html">Game & Video</a></li>
             </ul>
         </header>
+        <div class="b-utama">
+            <div class="utama">
+                <a href="berita.html">
+                    <h1>Title Berita</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </a>
+            </div>
+        </div>
 
         <main>
             <section class="section1">
                 <span class="News">
                     <div>
-                        <a href="berita.html"></a>
-                        <h1 > Title Berita</h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
-
                         <h1>Berita Terbaru</h1>
 
                         <div class="B">
@@ -56,6 +106,10 @@
                                 <div class="box1"><p>Title Berita</p></div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                             </div>
+                            <div class="A">
+                                <div class="box1"> <p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
                         </div>
                         <div class="B">
                             <div class="A">
@@ -66,8 +120,16 @@
                                 <div class="box1"><p>Title Berita</p></div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                             </div>
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
                         </div>
                         <div class="B">
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
                             <div class="A">
                                 <div class="box1"><p>Title Berita</p></div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
@@ -79,6 +141,13 @@
                         </div>
 
                         <h1>Berita Viral</h1>
+                        <div class="C">
+                            <div class="box2"></div>
+                            <div class="nama">
+                                <h1>Title Berita</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
                         <div class="C">
                             <div class="box2"></div>
                             <div class="nama">
@@ -100,41 +169,180 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                             </div>
                         </div>
-
-                       
+                        <div class="D">
+                            <div class="box2"></div>
+                            <div class="nama">
+                                <h1>Title Berita</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="samping">
-                        <b class="comment"> Komentar :</b>
+                        <b class="comment">Berita Teknologi</b>
                         <b class=" hot"> Berita Terpanas</b>
                         <b class=" hot"> Saran Teknologi</b>
                     </div>
                 </span>
             </section>
 
+            <section class="section2">
+                <h1 class="judul">Title Berita</h1>
+                <div class="utama-2">
+                    <a href="">
+                        <h1>Judul Berita</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section1">
+                <span class="News">
+                    <div>
+                        <h1>Berita Teknologi</h1>
+
+                        <div class="B">
+                            <div class="A">
+                                <div class="box1"> <p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                            <div class="A">
+                                <div class="box1"> <p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="B">
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="B">
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                            <div class="A">
+                                <div class="box1"><p>Title Berita</p></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </section>
+
+            <section class="section2">
+                <div class="utama-2">
+                    <a href="" id="bb">
+                        <h1>Title Berita</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </a>
+                </div>
+            </section>
+
             <h1 class="title"> Kategori Berita</h1>
 
             <section class="section2">
                 <div class="E">
-                    <div class="box3"><h1>Kategori</h1></div>
-                    <div class="box3"> <h1>Kategori</h1></div>
-                    <div class="box3"> <h1>Kategori</h1></div>
+                    <div class="box3"><h1>Apps</h1></div>
+                    <div class="box3"> <h1>Gadget</h1></div>
+                    <div class="box3"> <h1>OS</h1></div>
                 </div>
                 <div class="E">
-                    <div class="box3"> <h1>Kategori</h1></div>
-                    <div class="box3"> <h1>Kategori</h1></div>
-                    <div class="box3"> <h1>Kategori</h1></div>
+                    <div class="box3"> <h1>Game</h1></div>
+                    <div class="box3"> <h1>Video</h1></div>
+                    <div class="box3"> <h1>Technology</h1></div>
+                </div>
+            </section>
+
+
+            <h1 class="title-A" id="ti-a">Jelajahi</h1>
+            <section class="section2">
+                <div class="F">
+                    <div class="box4">
+                        <ul>
+                            <li><a href="">App & OS</a></li>
+                            <li><a href="">Internet</a></li>
+                            <li><a href="">Tech Inovasion</a></li>
+                        </ul>
+                    </div>
+                    <div class="box4">
+                        <ul>
+                            <li><a href="">Gadget</a></li>
+                            <li><a href="">Hardware & Software</a></li>
+                            <li><a href="">Game & Video</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section2-1" id="sc2">
+                <div class="container">
+                  <div class="comment-box gradient-bg">
+                  <h2 class="comment-title">Komentar</h2>
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                      <label for="comment" class="comment">Comment:</label>
+                      <textarea id="comment" name="comment" placeholder="Type your comment here"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                  </form>
+                </div>
                 </div>
             </section>
         </main>
 
         <footer>
-            <nav>
-                <div class = "logo">
-                    <h4> Medan.Tech27</h4>
-                </div>
-            </nav>
+            <div class="box5">
+                <ul>
+                    <li>
+                        <a href="">
+                             <div class = "logo">
+                                <img src="img/LOGO.png">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class = "logo">
+                            <div class="logos"></div>
+                            <div class="logos"></div>
+                            <div class="logos"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box6">
+                <a href=""><div class="sosmed"><img src="img/fc.png"></div></a>
+                <a href=""><div class="sosmed"><img src="img/ig.png"></div></a>
+                <a href=""><div class="sosmed"><img src="img/TWT.png"></div></a>    
+                <p class="ft"> &copy; Tim IT MedanTech</p>
+            </div>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 
 </html>
