@@ -1,48 +1,57 @@
 body{
-    background: black;
+    background-color: black;
+    color: white;
+}
+.foto{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.card{
-    border:none;
-    background-color: black;
+.foto img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
     margin: auto;
-    margin-top: 30px;
-    width: 400px;
-    padding-bottom: 50px;
-    padding: 50px;
-    position:relative;
+}
+.section1 .A-p {
+    display: list-item;
+    justify-content: space-between;
+    text-align: center;
+    width: 250px;
     overflow:hidden;
     border-radius: 20px;
     cursor:pointer;
     color: white;
     text-align: center;
     box-shadow: 0 0 30px orange;
+    border:none;
+    background-color: black;
+    margin: auto;
+    margin-top: 50pxpx;
+    position:relative;
+    padding-bottom: 30px;
+    
 }
 
-.card:before{
-    
+.section1 .A-p:before{
     content:"";
     position:absolute;
     left:0;
     top:0;
     width:4px;
     height:100%;
-    background-color: white;
+    background-color: black;
     transform:scaleY(1);
     transition:all 0.5s;
     transform-origin: bottom
 }
 
-.prf{
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    margin: auto;
-    margin-bottom: 30px;
-    border-radius: 100%;
-}
-
-.card:after{
+.A-p:after{
     
     content:"";
     position:absolute;
@@ -50,30 +59,29 @@ body{
     top:0;
     width:4px;
     height:100%;
-    background-color: #ffc662;
+    background-color: whitesmoke;
     transform:scaleY(0);
     transition:all 0.5s;
     transform-origin: bottom
 }
 
-.card:hover::after{
+.A-p:hover::after{
     transform:scaleY(1);
 }
 
-
-.fonts{
-    font-size:11px;
+.box-p{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 20px; 
+    border: 2px black solid;
+    list-style: none;
 }
- .buttons{
-    margin-top: 30px;
- }
-
- .buttons .btn{
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    transition: 0.5s;
- }
- .buttons .btn:hover{
-    background-color: orange;
- }
+.box-p p{
+    padding: 5px;
+}
