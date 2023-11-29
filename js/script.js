@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     return;
   }
-
+},
   // ...
 
 //   // Kirim data ke server
@@ -84,7 +84,7 @@ function validateForm() {
     }
   
     return true;
-  }
+  },
   
   function checkLogin() {
     // Dapatkan username dan password dari form
@@ -110,7 +110,7 @@ function validateForm() {
         alert("Login gagal");
       }
     };
-  }
+  },
   
   function loadForm() {
     // Dapatkan elemen form
@@ -118,17 +118,13 @@ function validateForm() {
   
     // Tambahkan efek animasi
     form.classList.add("animated", "fadeIn");
-  }
+  },
   
   // Event handler
   document.getElementById("form-login").onsubmit = validateForm;
   
   // Tampilan form login
   loadForm();
-
-
-
-
 
  const btn = document.querySelector('.btv');
          
