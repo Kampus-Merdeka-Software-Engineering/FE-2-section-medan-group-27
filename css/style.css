@@ -574,6 +574,7 @@ footer {
     text-align: left;
     padding: 50px;
     background-color:black;
+    position: -webkit-sticky;
 }
 
 footer .logo-ft{
