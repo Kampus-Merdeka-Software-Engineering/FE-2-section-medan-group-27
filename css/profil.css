@@ -3,20 +3,28 @@ body{
     color: white;
 }
 .foto{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 160px;
     border-radius: 10%;
-    background-color: white;
+    background-color: transparent;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+h1{
+    margin-bottom: -100px;
+}
+
+.B{
+    margin-top: 100px;
+}
 
 .foto img{
     width: 100px;
-    height: 100px;
+    height: 160px;
     border-radius: 10%;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .section1 .A-p {
     display: list-item;
@@ -84,4 +92,13 @@ body{
 }
 .box-p p{
     padding: 5px;
+}
+
+@media (max-width: 880px){
+    h1{
+        margin-bottom: 0px;
+    }
+    .News .B{
+        margin-bottom: 50px;
+    }
 }

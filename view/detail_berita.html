@@ -7,79 +7,48 @@
     </head>
 
     <body>
-        <script>
+         <header>
+            <div class="navbar-fix">
+                <nav>
+                    <div class = "logo">
+                        <img src="../img/LOGO.png">
+                    </div>
 
-            // const tbody = document.querySelector('tbody')
-            // let userData = [];
+                    <nav class="login">
+                        <form>
+                             <input type="text" placeholder="Cari topik" class="search-input">
+                             <button type="submit" class="search">Search</button>
+                        </form>
 
-            // const loadData = async () => {
-            //     try {
-            //         const url = await fetch('https://jsonplaceholder.typicode.com/posts');
-            //         userData = await url.json();
-            //         console.log(userData)
-            //         loadUserData(userData);
-
-            //     } catch (err){
-            //         console.log(err)
-            //     }
-            // }
-
-            // const loadUserData = (data) => {
-            //     let no =1;
-            //     const output = data.map((el) => {
-            //         return 
-            //         <tr>
-            //             <td> + (no++) + </td>
-            //             <td>${el.title}</td>
-            //             <td>${el.body}</td>
-
-            //         </tr>
-            //     }).join('')
-            //     tbody.innerHTML = output;
-            // }
-
-            // loadData()
-        </script>
-        <header>
-            <nav>
-                <div class = "logo">
-                    <img src="../img/LOGO.png">
-                </div>
-
-                <nav class="login">
-                    <form>
-                         <input type="text" placeholder="Cari topik" class="search-input">
-                         <button type="submit" class="search">Search</button>
-                    </form>
-
-                     <div type="button" class="btv"><img src="../img/ic.png"></div>
-    
-                    <b class="opsi-login">  
-                     <div class="menu">
+                         <div type="button" class="btv"><img src="../img/ic.png"></div>
+        
+                        <b class="opsi-login">  
+                        <div class="menu">
                             <ul>
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="profil.html">About Us</a></li>
+                                <li class="home"><a href="../index.html">Home</a></li>
+                                <li class="dropdown"><a href="#" class="dr"><img src="../img/icd.png"></a>
+                                <ul class="isi-dropdown">
+                                    <li><a href="profil.html">About Us</a></li>
+                                    <li><a href="#sc2">Contact Us</a></li>
+                                </ul>
+                                </li>
                             </ul>
-                        </div>   
-                    </b>
+                        </div>  
+                        </b>
+                    </nav>
                 </nav>
-            </nav>
 
-            <ul class="navbar">
-                <li class="app" onclick="myfunction()"><a href="app.html">Apps & OS</a></li>
-                <li><a href="Busines.html">Business</a></li>
-                <li><a href="Internet.html">Internet</a></li>
-                <li><a href="galery.html">Gallery</a></li>
-                <li><a href="tech.html">Tech Innovation</a></li>
-                <li><a href="gadget.html">Gadget</a></li>
-                <li><a href="hardware.html">Hardware</a></li>
-                <li><a href="game.html">Game</a></li>
-                <li><a href="ind.html">Indeks</a></li>
-                <li><a href="Kilas.html">Kilas Internet</a></li>
-            </ul>
+                <ul class="navbar">
+                    <li><a href="app.html">Apps & OS</a></li>
+                    <li><a href="Internet.html">Internet</a></li>
+                    <li><a href="hardware.html">Hardware & Software</a></li>
+                    <li><a href="game.html">Game & Video</a></li>
+                    <li><a href="gadget.html">Gadget</a></li>
+                </ul>
+            </div>    
         </header>
 
-        <main style="padding-top: 0px;">
+        <main>
             <section class="section1">
                 <span class="News">
                     <div class="b-utama">
@@ -101,23 +70,47 @@
                 <div class="F">
                     <div class="box4">
                         <ul>
-                            <li><a href="">Beranda</a></li>
-                            <li><a href="">App & OS</a></li>
-                            <li><a href="">Busines</a></li>
-                            <li><a href="">Internet</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">Tech Inovasion</a></li>
+                            <li><a href="view/app.html">Apps & OS</a></li>
+                            <li><a href="view/Internet.html">Internet</a></li>
+                            <li><a href="view/hardware.html">Hardware & Software</a></li>
                         </ul>
                     </div>
                     <div class="box4">
                         <ul>
-                            <li><a href="">Gadget</a></li>
-                            <li><a href="">Hardware</a></li>
-                            <li><a href="">Game</a></li>
-                            <li><a href="">Index</a></li>
-                            <li><a href="">Kilas Internet</a></li>
+                            <li><a href="view/game.html">Game & Video</a></li>
+                            <li><a href="view/gadget.html"></a>Gadget</li>
                         </ul>
                     </div>
+                </div>
+            </section>
+            <section class="section2-1" id="sc2">
+                <div class="container">
+
+                </div>    
+                <div class="container">
+                  <div class="comment-box gradient-bg" style="background-color: transparent; box-shadow: none;">
+                      <h2 class="comment-title2">Have a question or feedback? We'd love to hear from you! Use the form on the side to get in touch:</h2>
+                  </div>
+                  <div class="comment-box gradient-bg">
+                      <h2 class="comment-title">Contact Us</h2>
+                      <form id="komentar-form" method="post">
+                        <div class="form-group">
+                          <label for="nama">Nama:</label>
+                          <input type="text" id="nama" nama="nama" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                          <label for="komentar" class="komentar">Komentar:</label>
+                          <textarea id="komentar" name="komentar" placeholder="Type your Comment here"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" value="Kirim">Submit</button>
+                      </form>
+                      <script src="../js/script.js"></script>
+                  </div>
+                 
                 </div>
             </section>
         </main>
@@ -127,7 +120,7 @@
                 <ul>
                     <li>
                         <a href="">
-                             <div class = "logo">
+                             <div class = "logo-ft">
                                 <img src="../img/LOGO.png">
                             </div>
                         </a>
