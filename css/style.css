@@ -11,6 +11,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
  }
 
  /* Header halaman */
@@ -137,6 +142,11 @@ nav .login{
     font-weight: bold;
     cursor: pointer;
 }
+.login form{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
 
 /*Main Content */
@@ -173,8 +183,10 @@ nav .login{
 
 /*section1*/
 main{
-    padding-bottom: 50px;
+    height: 100rem;
     padding-top: 150px;
+    box-sizing: border-box;
+    background-color: rgba(148, 148, 148, 0.25);
 }
 .section1{
     display: flex;
@@ -287,7 +299,7 @@ main{
 }
 
 .section1 div{
-    display: list-item;
+    /* display: list-item; */
     justify-content: space-between;
     list-style: none;
 }
@@ -311,7 +323,8 @@ main{
 /*section2*/
 .section1 .B{
     display: flex;
-    width: 660px;
+    flex-wrap: wrap;
+    width: 800px;
     height: 150px;
     justify-content: space-around;
     gap: 20px;
@@ -324,8 +337,8 @@ main{
 .section1 .A {
     display: list-item;
     justify-content: space-between;
-    text-align: center;
-    width: 250px;
+    text-align: justify;
+    width: 200px;
     
 }
 
@@ -335,8 +348,7 @@ main{
     width: 200px; 
     background-color: white;
     height: 150px; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    border-radius: 20px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
     border: 2px black solid;
     list-style: none;
 }
@@ -603,12 +615,21 @@ footer .logo-ft img{
   display: flex;
 }
 
-.comment-box {
+.contact {
   background-color: #fff;
   padding: 40px;
   width: 35%;
   border-radius: 10px;
   box-shadow: 0 10px 20px orange;
+  background: linear-gradient(to bottom, black,black);
+}
+.comment-box .gradient-bg {
+    background-color: #fff;
+    padding: 40px;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px orange;
+    background: linear-gradient(to bottom, black,black);
 }
 
 .comment-title {
@@ -676,7 +697,7 @@ textarea{
 }
 
 .gradient-bg {
-  background: linear-gradient(to bottom, black,black);
+  
 }
 
 .gradient-bg .btn-submit {

@@ -9,46 +9,46 @@ const myClick = document.querySelector('.btv');
     document.body.style.backgroundColor = rndCol;
     });
 
-//Komentar
-var form = document.getElementById("komentar-form");
-var komentarList = document.getElementById("komentar-list");
+// //Komentar
+// var form = document.getElementById("komentar-form");
+// var komentarList = document.getElementById("komentar-list");
 
-// Tambahkan event listener ke formulir saat dikirim
-form.addEventListener("submit", function(event) {
-event.preventDefault(); // Mencegah refresh halaman
+// // Tambahkan event listener ke formulir saat dikirim
+// form.addEventListener("submit", function(event) {
+// event.preventDefault()}); // Mencegah refresh halaman
 
-// Tangkap nilai input nama dan komentar
-var nama = document.getElementById("nama").value;
-var email = document.getElementById("email").value;
-var komentar = document.getElementById("komentar").value;
+// // Tangkap nilai input nama dan komentar
+// var nama = document.getElementById("nama").value;
+// var email = document.getElementById("email").value;
+// var komentar = document.getElementById("komentar").value;
 
-// Buat objek FormData untuk mengirim data komentar ke server
-var formData = new FormData();
-formData.append("nama", nama);
-formData.append("email", email);
-formData.append("komentar", komentar);
+// // Buat objek FormData untuk mengirim data komentar ke server
+// var formData = new FormData();
+// formData.append("nama", nama);
+// formData.append("email", email);
+// formData.append("komentar", komentar);
 
-// Kirim data komentar ke server menggunakan fetch API
-fetch("../data-json/server.php", {
-method: "POST",
-body: formData
-})
-.then(function(response) {
-return response.json(); // Mengubah respons server menjadi JSON
-})
-.then(function(data) {
-// Tampilkan komentar yang baru ditambahkan
-var komentarBaru = document.createElement("div");
-komentarBaru.innerHTML = "<strong>" + data.nama + data.email +":</strong> " + data.komentar + "<hr>";
-komentarList.appendChild(komentarBaru);
+// // Kirim data komentar ke server menggunakan fetch API
+// fetch("../data-json/server.php", {
+// method: "POST",
+// body: formData
+// })
+// .then(function(response) {
+// return response.json(); // Mengubah respons server menjadi JSON
+// })
+// .then(function(data) {
+// // Tampilkan komentar yang baru ditambahkan
+// var komentarBaru = document.createElement("div");
+// komentarBaru.innerHTML = "<strong>" + data.nama + data.email +":</strong> " + data.komentar + "<hr>";
+// komentarList.appendChild(komentarBaru)});
 
-// Reset nilai input nama dan komentar
-form.reset();
-})
-.catch(function(error) {
-console.log(error);
-});
-});
+// // Reset nilai input nama dan komentar
+// form.reset();
+// })
+// .catch(function(error) {
+// console.log(error);
+// });
+// });
 
 
 
@@ -67,3 +67,4 @@ document.getElementById("tombol-search").addEventListener("click", function() {
     }
   }
 });
+
