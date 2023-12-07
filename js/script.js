@@ -54,17 +54,16 @@ const myClick = document.querySelector('.btv');
 
 
 //search
-document.getElementById("tombol-search").addEventListener("click", function() {
-  var inputText = document.getElementById("search-dong").value;
-  var listItems = document.querySelector("#result-list main");
+// document.getElementById("tombol-search").addEventListener("click", function() {
+//   var inputText = document.getElementById("search-dong").value;
+//   var listItems = document.querySelector("#result-list main");
 
-  for (var i = 0; i < listItems.length; i++){
-    var listItem = listItems[i];
+//   for (var i = 0; i < listItems.length; i++){
+//     var listItem = listItems[i];
 
-    if(listItem.innerHTML.toLowerCase().includes(inputText,toLowerCase())){
-      listItem.style.display = "none";
-
-    }
-  }
-});
+//     if(listItem.innerHTML.toLowerCase().includes(inputText,toLowerCase())){
+//       listItem.style.display = "none";
+//     }
+//   }
+// });
 
