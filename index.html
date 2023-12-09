@@ -15,8 +15,10 @@
                     </div>
 
                     <nav class="login">
-                        <form>
-                             <input type="text" placeholder="Cari Berita" class="search-input" id="search-dong">
+                        <form id="search" action="./view/search.html">
+                             <input id="searchInput" type="text" placeholder="Cari Berita" class="search-input">
+                             <button type="button" id="searchButton" class="search">Search</button>
+                              
                         </form>
 
                          <div type="button" class="btv"><img src="img/ic.png"></div>
@@ -51,6 +53,7 @@
                 </span>
             </section>
         </main>
+        
         <footer> 
             <div class="container">
                 <div class="comment-box gradient-bg" style="background-color: transparent; box-shadow: none;">
@@ -73,8 +76,9 @@
                     </form>
             </div>
         </footer>
+        <script>const API_URL = 'http://localhost:3000';</script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-          <script src="js/script.js"></script>
-          <script src ="./js/index.js"></script>
+        <script src="./js/script.js"></script>
+        <script src ="./js/index.js"></script>
     </body>
 </html> 

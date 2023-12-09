@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:3000'
+
 //Beranda//
 function renderData(data){
     const beritaElement = document.getElementById('berita')
