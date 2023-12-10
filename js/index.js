@@ -18,7 +18,7 @@ function renderData(data){
 
 }
 
-fetch(`${API_URL}/news`)
+fetch(`${API_URL}/news?keyword=${keyword}`)
     .then(response => response.json())
     .then(data => {
         renderData(data)
@@ -30,28 +30,28 @@ fetch(`${API_URL}/news`)
     })
 
     
-function searchMenu()
-{
-  var input = document.getElementById("searchInput");
-  var filter = input.value.toLocaleLowerCase();
-  var ul = document.getElementById("baru");
-  var div = document.querySelectorAll("berita");
-  console.log(div);
-  for( var i=0; i<div.length; i++){
-    var ahref = document.querySelectorAll("isi")[i];
-    if(ahref.innerHTML.toLocaleLowerCase().includes(filter) > -1){
-      div[i].style.display = "";
-    }
-    else{
-      div[i].style.display = "none";
-    }
+// function searchMenu()
+// {
+//   var input = document.getElementById("searchInput");
+//   var filter = input.value.toLocaleLowerCase();
+//   var ul = document.getElementById("baru");
+//   var div = document.querySelectorAll("berita");
+//   console.log(div);
+//   for( var i=0; i<div.length; i++){
+//     var ahref = document.querySelectorAll("isi")[i];
+//     if(ahref.innerHTML.toLocaleLowerCase().includes(filter) > -1){
+//       div[i].style.display = "";
+//     }
+//     else{
+//       div[i].style.display = "none";
+//     }
 
-  }
-}
+//   }
+// }
 
-keyword.addEventListener("input", function() {
-  searchMenu();
-})
+// keyword.addEventListener("input", function() {
+//   searchMenu();
+// })
 
 
 
