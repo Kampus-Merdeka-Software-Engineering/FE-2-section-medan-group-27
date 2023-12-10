@@ -1,43 +1,43 @@
-const keywordInput = document.getElementById('searchInput')
+const keywordInput = document.getElementById('searchInput');
 const keyword = encodeURIComponent(keywordInput.value.trim());
 
-//Beranda//
-function renderData(data){
-    const beritaElement = document.getElementById('berita')
-    console.log(baru)
-    console.log(data)
-    data.forEach(item => {
-        beritaElement.innerHTML += `<div class="A" >
-         <a href="view/detail_berita.html?id=${item.ID_berita}">
-            <img src=${item.Image} alt="" class="box1" ></img>
-            <p id="isi">${item.Judul_Berita}</p>
-        </a>
-    </div>`
-    });
+// Beranda //
+function renderData(data) {
+    const beritaElement = document.getElementById('berita');
+    beritaElement.innerHTML = ""; // Membersihkan isi sebelum menambahkan yang baru
 
+    data.forEach(item => {
+        beritaElement.innerHTML += `<div class="A">
+            <a href="view/detail_berita.html?id=${item.ID_berita}">
+                <img src="${item.Image}" alt="" class="box1"></img>
+                <p id="isi">${item.Judul_Berita}</p>
+            </a>
+        </div>`;
+    });
 }
 
-fetch(`${API_URL}/news/${keyword}`)
-    .then(response => response.json())
-    .then(data => {
-        renderData(data)
-    })
-    .catch(error => {
-      console.error({
-        error
-      })
-    })
-
+// Melakukan fetch berdasarkan keyword jika ada
+if (keyword) {
+    fetch(`${API_URL}/news?keyword=${keyword}`)
+        .then(response => response.json())
+        .then(data => {
+            renderData(data);
+        })
+        .catch(error => {
+            console.error({ error });
+        });
+} else {
+    // Jika tidak ada keyword, tampilkan semua berita
     fetch(`${API_URL}/news`)
-    .then(response => response.json())
-    .then(data => {
-        renderData(data)
-    })
-    .catch(error => {
-      console.error({
-        error
-      })
-    })
+        .then(response => response.json())
+        .then(data => {
+            renderData(data);
+        })
+        .catch(error => {
+            console.error({ error });
+        });
+}
+
 
     
 // function searchMenu()
