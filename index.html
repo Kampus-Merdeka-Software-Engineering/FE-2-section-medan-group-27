@@ -15,9 +15,9 @@
                     </div>
 
                     <nav class="login">
-                        <form id="search" >
-                            <input id="searchInput" type="text" name="Keyword" placeholder="Cari Berita" class="search-input">
-                        </form>
+                        <form>
+                            <input type="text" placeholder="Cari Berita" class="search-input" id="search-dong" onkeyup="prosesMenu()">
+                       </form>
                         
 
                          <div type="button" class="btv"><img src="img/ic.png"></div>
@@ -80,5 +80,23 @@
         <script src="./js/script.js"></script>
         <script src ="./js/index.js"></script>
         <script src="./js/contact.js"></script>
+        <script type="text/javascript">
+            function prosesMenu()
+              {
+                var input = document.getElementById("search-dong");
+                var filter = input.value.toLowerCase();
+                var ul = document.getElementById("berita");
+                var div = document.querySelectorAll("A")
+                console.log(div)
+                for(var i = 0; i<div.length; i++){
+                  var ahref = document.querySelectorAll("p")[i];
+                  if(ahref.innerHTML.toLowerCase().indexOf(filter) > -1){
+                    div[i].style.display = "";
+                  }else{
+                    div[i].style.display = "none";
+                  }
+                }
+              }
+        </script>
     </body>
 </html> 
