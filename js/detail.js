@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://kind-erin-scallop-belt.cyclic.app';
 
 // Detail berita
 function renderDetail(item) {

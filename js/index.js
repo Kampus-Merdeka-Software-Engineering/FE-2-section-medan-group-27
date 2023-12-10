@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:3000'
+const API_URL = 'https://kind-erin-scallop-belt.cyclic.app'
 //Beranda//
 function renderData(data){
     const beritaElement = document.getElementById('berita')
