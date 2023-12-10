@@ -4,6 +4,9 @@ const keyword = encodeURIComponent(keywordInput.value.trim());
 // Beranda //
 function renderData(data) {
     const beritaElement = document.getElementById('berita');
+    console.log(baru)
+    console.log(data)
+
     beritaElement.innerHTML = ""; // Membersihkan isi sebelum menambahkan yang baru
 
     data.forEach(item => {
