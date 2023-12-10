@@ -1,4 +1,5 @@
-const keyword = document.getElementById('searchInput')
+const keywordInput = document.getElementById('searchInput')
+const keyword = encodeURIComponent(keywordInput.value.trim());
 
 //Beranda//
 function renderData(data){
