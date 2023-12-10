@@ -1,4 +1,4 @@
-
+const API_URL = 'http://localhost:3000';
 
 // Detail berita
 function renderDetail(item) {
@@ -10,6 +10,7 @@ function renderDetail(item) {
       <h3> Author : ${item.Author}</h3>
       <p>${item.Detail_berita}</p>`;
 }
+
 
 const urlParams = new URLSearchParams(window.location.search);
 const idBerita = urlParams.get('id');

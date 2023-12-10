@@ -1,4 +1,3 @@
-
 const myClick = document.querySelector('.btv');
          
     function random(number) {
@@ -10,4 +9,5 @@ const myClick = document.querySelector('.btv');
     document.body.style.backgroundColor = rndCol;
     });
 
-   
+
+

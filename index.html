@@ -16,9 +16,8 @@
 
                     <nav class="login">
                         <form>
-                            <input type="text" placeholder="Cari Berita" class="search-input" id="search-dong" onkeyup="prosesMenu()">
-                       </form>
-                        
+                             <input type="text" placeholder="Cari Berita" class="search-input" id="search-dong" onkeyup="prosesMenu()">
+                        </form>
 
                          <div type="button" class="btv"><img src="img/ic.png"></div>
         
@@ -41,8 +40,8 @@
 
         <main id="result-list">
             <section class="section1">
-                <span  class="News">
-                    <div id="baru">
+                <span id="baru" class="News">
+                    <div>
                         <h1>Berita Terbaru</h1>
 
                         <div id="berita" class="B">
@@ -52,10 +51,9 @@
                 </span>
             </section>
         </main>
-        
         <footer> 
             <div class="container">
-                <div class="comment-box gradient-bg" style="background-color: transparent; box-shadow: none;">
+                <div class="comment-box">
                     <h2 class="comment-title2">Have a question or feedback? We'd love to hear from you! Use the form on the side to get in touch:</h2>
                 </div>
                 <div class="contact">
@@ -75,27 +73,26 @@
                     </form>
             </div>
         </footer>
-        <script>const API_URL = 'https://kind-erin-scallop-belt.cyclic.app';</script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="./js/script.js"></script>
-        <script src ="./js/index.js"></script>
-        <script src="./js/contact.js"></script>
-        <script type="text/javascript">
-            function prosesMenu() {
-                var input = document.getElementById("search-dong");
-                var filter = input.value.toLowerCase();
-                var div = document.querySelectorAll("div.A"); // Menyesuaikan pemilihan elemen <div>
-                console.log(div)
-                for (var i = 0; i < div.length; i++) {
-                    var ahref = div[i].querySelector("p"); // Menyesuaikan pemilihan elemen <p>
-                    if (ahref.innerHTML.toLowerCase().indexOf(filter) > -1) {
-                        div[i].style.display = "";
-                    } else {
-                        div[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
+          <script src="js/script.js"></script>
+          <script src ="./js/index.js"></script>
+          <script type="text/javascript">
+    function prosesMenu() {
+        var input = document.getElementById("search-dong");
+        var filter = input.value.toLowerCase();
+        var div = document.querySelectorAll("div.A"); // Menyesuaikan pemilihan elemen <div>
+        console.log(div)
         
+        for (var i = 0; i < div.length; i++) {
+            var ahref = div[i].querySelector("p"); // Menyesuaikan pemilihan elemen <p>
+            if (ahref.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                div[i].style.display = "";
+            } else {
+                div[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
     </body>
 </html> 
