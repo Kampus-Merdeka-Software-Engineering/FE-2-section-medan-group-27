@@ -27,6 +27,17 @@ fetch(`${API_URL}/news/${keyword}`)
       })
     })
 
+    fetch(`${API_URL}/news`)
+    .then(response => response.json())
+    .then(data => {
+        renderData(data)
+    })
+    .catch(error => {
+      console.error({
+        error
+      })
+    })
+
     
 // function searchMenu()
 // {
