@@ -81,22 +81,21 @@
         <script src ="./js/index.js"></script>
         <script src="./js/contact.js"></script>
         <script type="text/javascript">
-            function prosesMenu()
-              {
+            function prosesMenu() {
                 var input = document.getElementById("search-dong");
                 var filter = input.value.toLowerCase();
-                var ul = document.getElementById("berita");
-                var div = document.querySelectorAll("A")
+                var div = document.querySelectorAll("div.A"); // Menyesuaikan pemilihan elemen <div>
                 console.log(div)
-                for(var i = 0; i<div.length; i++){
-                  var ahref = document.querySelectorAll("p")[i];
-                  if(ahref.innerHTML.toLowerCase().indexOf(filter) > -1){
-                    div[i].style.display = "none";
-                  }else{
-                    div[i].style.display = "";
-                  }
+                for (var i = 0; i < div.length; i++) {
+                    var ahref = div[i].querySelector("p"); // Menyesuaikan pemilihan elemen <p>
+                    if (ahref.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                        div[i].style.display = "";
+                    } else {
+                        div[i].style.display = "none";
+                    }
                 }
-              }
+            }
         </script>
+        
     </body>
 </html> 
