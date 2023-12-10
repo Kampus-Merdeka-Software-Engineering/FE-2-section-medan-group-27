@@ -1,4 +1,4 @@
-
+const keyword = document.getElementById('searchInput')
 
 //Beranda//
 function renderData(data){
@@ -16,7 +16,7 @@ function renderData(data){
 
 }
 
-fetch(`${API_URL}/news`)
+fetch(`${API_URL}/news/${keyword}`)
     .then(response => response.json())
     .then(data => {
         renderData(data)
