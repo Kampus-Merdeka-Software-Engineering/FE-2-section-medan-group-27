@@ -15,11 +15,10 @@
                     </div>
 
                     <nav class="login">
-                        <form id="search" action="./view/search.html">
-                             <input id="searchInput" type="text" placeholder="Cari Berita" class="search-input">
-                             <button type="button" id="searchButton" class="search">Search</button>
-                              
+                        <form id="search" >
+                            <input id="searchInput" type="text" name="Keyword" placeholder="Cari Berita" class="search-input">
                         </form>
+                        
 
                          <div type="button" class="btv"><img src="img/ic.png"></div>
         
@@ -42,8 +41,8 @@
 
         <main id="result-list">
             <section class="section1">
-                <span id="baru" class="News">
-                    <div>
+                <span  class="News">
+                    <div id="baru">
                         <h1>Berita Terbaru</h1>
 
                         <div id="berita" class="B">
@@ -76,9 +75,10 @@
                     </form>
             </div>
         </footer>
-        <script>const API_URL = 'http://localhost:3000';</script>
+        <script>const API_URL = 'https://kind-erin-scallop-belt.cyclic.app/';</script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="./js/script.js"></script>
         <script src ="./js/index.js"></script>
+        <script src="./js/contact.js"></script>
     </body>
 </html> 

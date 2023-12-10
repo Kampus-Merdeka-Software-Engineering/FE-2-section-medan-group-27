@@ -1,11 +1,9 @@
-const keyword = document.getElementById('searchInput');
-
 function renderSearch(data) {
-  const searchContainer = document.getElementById('search');
-
+  const searchContainer = document.getElementById('show')
+  console.log(cari)
+  console.log(data)
   // Kosongkan konten sebelum menambahkan data baru
   searchContainer.innerHTML = "";
-
   data.forEach(item => {
     searchContainer.innerHTML += `
       <div class="A">
@@ -17,40 +15,24 @@ function renderSearch(data) {
   });
 }
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const keywordInput = document.getElementById('searchInput');
 
-//   document.getElementById('searchButton').addEventListener('click', function () {
-//     const keyword = keywordInput.value.trim();
+// Ambil nilai keyword dari parameter rute
+const urlParams = new URLSearchParams(window.location.search);
+const keyword = urlParams.get('keyword');
 
-//     // Rest of your code
-//   });
-// });
-
-
-  if (!keyword) {
-    // Jika keyword kosong atau hanya terdiri dari spasi
-    fetch(`${API_URL}/news?keyword=`)
-      .then(response => response.json())
-      .then(data => {
-        renderSearch(data);
-      })
-      .catch(error => {
-        console.error({
-          error
-        });
-      });
-  } else {
-    // Jika keyword tidak kosong
-    fetch(`${API_URL}/news?keyword=${keyword}`)
-      .then(response => response.json())
-      .then(data => {
-        renderSearch(data);
-      })
-      .catch(error => {
-        console.error({
-          error
-        });
-      });
-  }
-
+// Jika keyword tidak kosong, lakukan fetch
+if (keyword) {
+  fetch(`${API_URL}/search/${keyword}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      renderSearch(data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+}
