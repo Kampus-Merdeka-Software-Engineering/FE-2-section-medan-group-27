@@ -1,4 +1,4 @@
-const keyword = document.getElementById('searchInput')
+
 
 //Beranda//
 function renderData(data){
