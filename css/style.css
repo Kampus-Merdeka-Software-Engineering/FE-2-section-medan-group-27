@@ -305,6 +305,8 @@ main{
     padding-bottom: 50px;
     margin-bottom: 1rem;
     background-color: transparent;
+    text-decoration: none;
+    color: black;
 }
 
 .section1 .A {
@@ -312,7 +314,13 @@ main{
     justify-content: space-between;
     text-align: justify;
     width: 200px;
+   
     
+}
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .box1{
@@ -335,6 +343,8 @@ main{
     padding-top: 10px;
     text-align:left;
     font-size: 0.8rem;
+    text-decoration: none;
+
 }
 
 
