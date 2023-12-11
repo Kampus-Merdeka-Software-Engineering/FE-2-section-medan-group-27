@@ -3,8 +3,6 @@ const API_URL = 'https://kind-erin-scallop-belt.cyclic.app'
 //Beranda//
 function renderData(data){
     const beritaElement = document.getElementById('berita')
-    console.log(baru)
-    console.log(data)
     data.forEach(item => {
         beritaElement.innerHTML += `<div class="A">
          <a href="view/detail_berita.html?id=${item.ID_berita}">
@@ -30,7 +28,6 @@ fetch(`${API_URL}/news`)
 //contact us
 function postContactUs(event){
     event.preventDefault();
-    console.log("test");
     // Ambil data dari form
     // const formBox = document.querySelector('.formbox');
     const form = event.target;
@@ -55,7 +52,6 @@ function postContactUs(event){
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
             form.reset();
             alert(data.message);
         })

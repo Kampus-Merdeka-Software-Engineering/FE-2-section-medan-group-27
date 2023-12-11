@@ -2,7 +2,7 @@ const API_URL = 'https://kind-erin-scallop-belt.cyclic.app';
 
 // Detail berita
 function renderDetail(item) {
-  console.log(item); // Tambahkan ini untuk melihat struktur objek item di konsol peramban
+     // Tambahkan ini untuk melihat struktur objek item di konsol peramban
   const beritaElement = document.getElementById('detail');
   beritaElement.innerHTML = `
       <h1>${item.Judul_Berita}</h1>
