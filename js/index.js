@@ -46,7 +46,7 @@ function postContactUs(event){
       };
 
     // post ke BE
-        fetch(`http://localhost:3000/contact`, {
+        fetch(`https://kind-erin-scallop-belt.cyclic.app/contact`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
